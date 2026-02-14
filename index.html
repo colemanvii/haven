@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAVEN</title>
+  <meta name="description" content="HAVEN — protection, place, continuity." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">HAVEN</div>
+    <div class="hair"></div>
+
+    <div class="split" role="navigation" aria-label="Primary">
+      <section class="half" aria-label="Philosophy">
+        <div>
+          <div class="kicker">Philosophy</div>
+          <div style="height:10px"></div>
+          <a class="biglink" href="philosophy.html">
+            <div class="bigtitle">The law of the land</div>
+            <div class="bigdesc">
+              Haven exists to make life more protected, more inhabitable, and more coherent.
+              Security. Keep. Families.
+            </div>
+          </a>
+        </div>
+        <div class="small">Read the first principles →</div>
+      </section>
+
+      <section class="half" aria-label="Projects">
+        <div>
+          <div class="kicker">Projects</div>
+          <div style="height:10px"></div>
+          <a class="biglink" href="projects.html">
+            <div class="bigtitle">What we’re building</div>
+            <div class="bigdesc">
+              Practical work already standing on the philosophy — built locally, tested in the real.
+            </div>
+          </a>
+        </div>
+        <div class="small">See what exists today →</div>
+      </section>
+    </div>
+
+    <div class="center-note">
+      Built from community outward. Signal comes after soil.
+    </div>
+
+    <div class="footer">
+      <div>© <span id="y"></span> HAVEN</div>
+      <div><code>Security → Keep → Families</code></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
