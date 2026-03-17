@@ -3,32 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HAVEN // FOUNDING DRAFT</title>
+  <title>HAVEN</title>
   <style>
     :root {
-      --bg: #f4f3ee;
-      --card: #eae7df;
-      --text: #1f1e1b;
-      --muted: #8a847a;
-      --line: rgba(31,30,27,0.08);
+      --bg: #f5f4ef;
+      --card: #ece9e1;
+      --text: #24231f;
+      --muted: #8f887d;
+      --line: rgba(36, 35, 31, 0.08);
+      --accent: #c89b67;
       --radius: 28px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html, body {
+    html,
+    body {
       margin: 0;
       min-height: 100%;
       background: var(--bg);
+      color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
-      color: var(--text);
+      text-rendering: optimizeLegibility;
     }
 
     body {
-      display: grid;
-      place-items: center;
-      padding: 40px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 56px 16px 72px;
     }
 
     .card {
@@ -36,12 +42,14 @@
       background: var(--card);
       border-radius: var(--radius);
       padding: 22px 22px 26px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.025);
     }
 
     .topbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
       padding-bottom: 12px;
       border-bottom: 1px solid var(--line);
       margin-bottom: 18px;
@@ -50,58 +58,98 @@
     .label,
     .status {
       font-size: 10px;
+      line-height: 1;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--muted);
       font-weight: 500;
+      white-space: nowrap;
     }
 
     .status-dot {
+      display: inline-block;
       width: 6px;
       height: 6px;
-      border-radius: 50%;
-      background: #c79a66;
-      display: inline-block;
       margin-right: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      transform: translateY(-1px);
     }
 
     h1 {
-      margin: 0 0 6px;
+      margin: 0 0 8px;
       font-size: 16px;
+      line-height: 1.1;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       font-weight: 600;
     }
 
     .subhead {
-      margin-bottom: 18px;
+      margin: 0 0 20px;
       font-size: 10px;
+      line-height: 1.4;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--muted);
+      font-weight: 500;
     }
 
     p {
       margin: 0 0 14px;
       font-size: 13px;
-      line-height: 1.7;
+      line-height: 1.72;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-weight: 400;
+      color: var(--text);
     }
 
     .question {
       margin-top: 20px;
       padding-top: 14px;
       border-top: 1px solid var(--line);
-      font-size: 13px;
-      letter-spacing: 0.14em;
       font-weight: 500;
+      letter-spacing: 0.14em;
     }
 
     @media (max-width: 640px) {
-      .card { padding: 18px; }
-      p { font-size: 12px; }
+      body {
+        padding: 28px 14px 40px;
+      }
+
+      .card {
+        padding: 18px 18px 20px;
+        border-radius: 24px;
+        box-shadow: none;
+      }
+
+      .topbar {
+        padding-bottom: 10px;
+        margin-bottom: 16px;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      .subhead,
+      .label,
+      .status {
+        font-size: 9px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.66;
+        letter-spacing: 0.08em;
+        margin-bottom: 13px;
+      }
+
+      .question {
+        margin-top: 18px;
+        padding-top: 13px;
+      }
     }
   </style>
 </head>
