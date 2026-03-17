@@ -3,168 +3,130 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Haven Charter</title>
+  <title>HAVEN // FOUNDING DRAFT</title>
   <style>
     :root {
-      --bg: #f3efe6;
-      --panel: #f6f2ea;
-      --text: #2a2926;
-      --muted: #8a847a;
-      --line: rgba(42, 41, 38, 0.08);
+      --bg: #f7f6f2;
+      --text: #201e1a;
+      --muted: #8b8478;
+      --line: rgba(32, 30, 26, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
-      padding: 0;
       min-height: 100%;
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
     }
 
     body {
       display: flex;
       justify-content: center;
-      padding: 72px 24px;
+      padding: 40px 16px 60px;
     }
 
     .page {
-      width: min(760px, 100%);
-      background: transparent;
+      width: min(620px, 100%);
     }
 
-    .frame {
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 8px 0 0;
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 20px;
     }
 
-    .eyebrow {
-      margin: 0 0 28px;
-      font-size: 11px;
-      line-height: 1;
-      letter-spacing: 0.16em;
+    .label,
+    .status {
+      font-size: 10px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--muted);
-      font-weight: 500;
+      font-weight: 600;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #c79a66;
+      margin-right: 6px;
     }
 
     h1 {
-      margin: 0;
-      font-size: clamp(34px, 5vw, 56px);
-      line-height: 1.02;
-      letter-spacing: -0.04em;
-      font-weight: 600;
-      color: var(--text);
+      margin: 0 0 6px;
+      font-size: 18px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
     }
 
     .subhead {
-      margin-top: 10px;
-      font-size: 14px;
-      line-height: 1.4;
-      letter-spacing: 0.01em;
+      margin: 0 0 22px;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
       color: var(--muted);
-      font-weight: 400;
-    }
-
-    .rule {
-      width: 100%;
-      height: 1px;
-      background: var(--line);
-      margin: 36px 0 40px;
-    }
-
-    .content {
-      max-width: 620px;
     }
 
     p {
-      margin: 0 0 24px;
-      font-size: clamp(18px, 2.1vw, 21px);
-      line-height: 1.72;
-      letter-spacing: -0.012em;
-      font-weight: 400;
-      color: var(--text);
+      margin: 0 0 14px;
+      font-size: 13px;
+      line-height: 1.7;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 500;
     }
 
     .question {
-      margin: 38px 0;
-      font-size: clamp(22px, 2.5vw, 28px);
-      line-height: 1.5;
-      letter-spacing: -0.02em;
-      font-weight: 500;
-    }
-
-    .closing {
-      margin-top: 36px;
-      font-size: clamp(19px, 2.2vw, 23px);
-      line-height: 1.65;
-      letter-spacing: -0.015em;
-      font-weight: 500;
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      letter-spacing: 0.16em;
+      font-weight: 700;
     }
 
     @media (max-width: 640px) {
-      body {
-        padding: 40px 18px 52px;
-      }
-
-      .eyebrow {
-        margin-bottom: 22px;
-      }
-
-      .rule {
-        margin: 28px 0 30px;
-      }
-
-      p {
-        line-height: 1.68;
-        margin-bottom: 20px;
-      }
-
-      .question {
-        margin: 30px 0;
-      }
-
-      .closing {
-        margin-top: 28px;
-      }
+      body { padding: 28px 14px 40px; }
+      p { font-size: 12px; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <div class="frame">
-      <div class="eyebrow">Founding Draft</div>
-      <h1>Haven</h1>
-      <div class="subhead">in cyberspace as it is in heaven</div>
-      <div class="rule"></div>
+    <header class="topbar">
+      <div class="label">HAVEN / FOUNDING DRAFT</div>
+      <div class="status"><span class="status-dot"></span>STATIC</div>
+    </header>
 
-      <section class="content">
-        <p>Haven did not begin as a company or a platform. It began as a thought that would not leave.</p>
+    <h1>HAVEN</h1>
+    <div class="subhead">IN CYBERSPACE AS IT IS IN HEAVEN</div>
 
-        <p>For most of human history, the places where people sought truth were built of stone and timber. Cathedrals. Temples. Monasteries. Quiet rooms where a person could sit with their thoughts long enough for something real to appear.</p>
+    <section>
+      <p>HAVEN DID NOT BEGIN AS A COMPANY OR A PLATFORM. IT BEGAN AS A THOUGHT THAT WOULD NOT LEAVE.</p>
 
-        <p>But the center of life has drifted elsewhere now. Much of it unfolds inside a new territory that has no soil and no sky. We call it cyberspace. It moves quickly, speaks loudly, and rewards whatever captures attention the fastest.</p>
+      <p>FOR MOST OF HUMAN HISTORY, THE PLACES WHERE PEOPLE SOUGHT TRUTH WERE BUILT OF STONE AND TIMBER. CATHEDRALS. TEMPLES. MONASTERIES. QUIET ROOMS WHERE A PERSON COULD SIT WITH THEIR THOUGHTS LONG ENOUGH FOR SOMETHING REAL TO APPEAR.</p>
 
-        <p>Meaning rarely survives long in such a place.</p>
+      <p>BUT THE CENTER OF LIFE HAS DRIFTED ELSEWHERE NOW. MUCH OF IT UNFOLDS INSIDE A NEW TERRITORY THAT HAS NO SOIL AND NO SKY. WE CALL IT CYBERSPACE. IT MOVES QUICKLY, SPEAKS LOUDLY, AND REWARDS WHATEVER CAPTURES ATTENTION THE FASTEST.</p>
 
-        <p>Haven is an attempt to build something different there.</p>
+      <p>MEANING RARELY SURVIVES LONG IN SUCH A PLACE.</p>
 
-        <p>Not a network for noise. Not another system designed to capture and hold attention. Haven is an attempt to build a quiet structure in the digital world—a place where signal can remain intact, where thought can slow down, and where human presence is not reduced to an algorithm.</p>
+      <p>HAVEN IS AN ATTEMPT TO BUILD SOMETHING DIFFERENT THERE.</p>
 
-        <p>In older centuries people built cathedrals to hold light and silence. Haven asks a simpler question for our own time.</p>
+      <p>NOT A NETWORK FOR NOISE. NOT ANOTHER SYSTEM DESIGNED TO CAPTURE AND HOLD ATTENTION. HAVEN IS AN ATTEMPT TO BUILD A QUIET STRUCTURE IN THE DIGITAL WORLD—A PLACE WHERE SIGNAL CAN REMAIN INTACT, WHERE THOUGHT CAN SLOW DOWN, AND WHERE HUMAN PRESENCE IS NOT REDUCED TO AN ALGORITHM.</p>
 
-        <p class="question">What would a cathedral of thought look like in cyberspace?</p>
+      <p>IN OLDER CENTURIES PEOPLE BUILT CATHEDRALS TO HOLD LIGHT AND SILENCE. HAVEN ASKS A SIMPLER QUESTION FOR OUR OWN TIME.</p>
 
-        <p class="closing">This is the beginning of that attempt.</p>
-      </section>
-    </div>
+      <p class="question">WHAT WOULD A CATHEDRAL OF THOUGHT LOOK LIKE IN CYBERSPACE?</p>
+    </section>
   </main>
 </body>
 </html>
