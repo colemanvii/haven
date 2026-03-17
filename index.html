@@ -6,71 +6,78 @@
   <title>Haven Charter</title>
   <style>
     :root {
-      --bg: #f6f3ea;
-      --text: #171717;
-      --muted: #6e6a63;
-      --accent: #1e8fb5;
-      --accent-2: #c95c3b;
-      --line: rgba(23, 23, 23, 0.08);
+      --bg: #f3efe6;
+      --panel: #f6f2ea;
+      --text: #2a2926;
+      --muted: #8a847a;
+      --line: rgba(42, 41, 38, 0.08);
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html, body {
       margin: 0;
       padding: 0;
+      min-height: 100%;
       background: var(--bg);
       color: var(--text);
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      min-height: 100%;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
 
     body {
       display: flex;
-      align-items: center;
       justify-content: center;
-      padding: 48px 24px;
-      background-image:
-        linear-gradient(to bottom, transparent 31px, var(--line) 32px);
-      background-size: 100% 32px;
+      padding: 72px 24px;
     }
 
     .page {
       width: min(760px, 100%);
-      padding: 32px 20px 64px;
+      background: transparent;
+    }
+
+    .frame {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 8px 0 0;
     }
 
     .eyebrow {
+      margin: 0 0 28px;
       font-size: 11px;
-      letter-spacing: 0.18em;
+      line-height: 1;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--muted);
-      margin-bottom: 18px;
+      font-weight: 500;
     }
 
     h1 {
       margin: 0;
-      font-size: clamp(64px, 12vw, 120px);
-      line-height: 0.92;
-      letter-spacing: -0.06em;
-      color: var(--accent);
-      font-weight: 800;
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      font-weight: 600;
+      color: var(--text);
     }
 
     .subhead {
       margin-top: 10px;
-      font-size: clamp(22px, 3.2vw, 34px);
-      line-height: 1.08;
-      color: var(--accent-2);
-      font-weight: 500;
-      max-width: 12ch;
+      font-size: 14px;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      color: var(--muted);
+      font-weight: 400;
     }
 
     .rule {
-      width: 72px;
+      width: 100%;
       height: 1px;
-      background: rgba(23, 23, 23, 0.22);
-      margin: 56px 0 48px;
+      background: var(--line);
+      margin: 36px 0 40px;
     }
 
     .content {
@@ -78,57 +85,86 @@
     }
 
     p {
-      margin: 0 0 22px;
-      font-size: 19px;
-      line-height: 1.75;
-      letter-spacing: -0.01em;
+      margin: 0 0 24px;
+      font-size: clamp(18px, 2.1vw, 21px);
+      line-height: 1.72;
+      letter-spacing: -0.012em;
+      font-weight: 400;
+      color: var(--text);
     }
 
     .question {
-      font-size: 26px;
-      line-height: 1.35;
-      margin: 34px 0;
+      margin: 38px 0;
+      font-size: clamp(22px, 2.5vw, 28px);
+      line-height: 1.5;
+      letter-spacing: -0.02em;
+      font-weight: 500;
     }
 
     .closing {
-      font-size: 22px;
-      line-height: 1.5;
+      margin-top: 36px;
+      font-size: clamp(19px, 2.2vw, 23px);
+      line-height: 1.65;
+      letter-spacing: -0.015em;
+      font-weight: 500;
     }
 
     @media (max-width: 640px) {
-      body { padding: 24px 16px; }
-      .page { padding: 12px 4px 40px; }
-      p { font-size: 17px; line-height: 1.7; }
-      .question, .closing { font-size: 21px; }
+      body {
+        padding: 40px 18px 52px;
+      }
+
+      .eyebrow {
+        margin-bottom: 22px;
+      }
+
+      .rule {
+        margin: 28px 0 30px;
+      }
+
+      p {
+        line-height: 1.68;
+        margin-bottom: 20px;
+      }
+
+      .question {
+        margin: 30px 0;
+      }
+
+      .closing {
+        margin-top: 28px;
+      }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <div class="eyebrow">Founding Draft</div>
-    <h1>HAVEN</h1>
-    <div class="subhead">in cyberspace as it is in heaven</div>
-    <div class="rule"></div>
+    <div class="frame">
+      <div class="eyebrow">Founding Draft</div>
+      <h1>Haven</h1>
+      <div class="subhead">in cyberspace as it is in heaven</div>
+      <div class="rule"></div>
 
-    <section class="content">
-      <p>Haven did not begin as a company or a platform. It began as a thought that would not leave.</p>
+      <section class="content">
+        <p>Haven did not begin as a company or a platform. It began as a thought that would not leave.</p>
 
-      <p>For most of human history, the places where people sought truth were built of stone and timber. Cathedrals. Temples. Monasteries. Quiet rooms where a person could sit with their thoughts long enough for something real to appear.</p>
+        <p>For most of human history, the places where people sought truth were built of stone and timber. Cathedrals. Temples. Monasteries. Quiet rooms where a person could sit with their thoughts long enough for something real to appear.</p>
 
-      <p>But the center of life has drifted elsewhere now. Much of it unfolds inside a new territory that has no soil and no sky. We call it cyberspace. It moves quickly, speaks loudly, and rewards whatever captures attention the fastest.</p>
+        <p>But the center of life has drifted elsewhere now. Much of it unfolds inside a new territory that has no soil and no sky. We call it cyberspace. It moves quickly, speaks loudly, and rewards whatever captures attention the fastest.</p>
 
-      <p>Meaning rarely survives long in such a place.</p>
+        <p>Meaning rarely survives long in such a place.</p>
 
-      <p>Haven is an attempt to build something different there.</p>
+        <p>Haven is an attempt to build something different there.</p>
 
-      <p>Not a network for noise. Not another system designed to capture and hold attention. Haven is an attempt to build a quiet structure in the digital world—a place where signal can remain intact, where thought can slow down, and where human presence is not reduced to an algorithm.</p>
+        <p>Not a network for noise. Not another system designed to capture and hold attention. Haven is an attempt to build a quiet structure in the digital world—a place where signal can remain intact, where thought can slow down, and where human presence is not reduced to an algorithm.</p>
 
-      <p>In older centuries people built cathedrals to hold light and silence. Haven asks a simpler question for our own time.</p>
+        <p>In older centuries people built cathedrals to hold light and silence. Haven asks a simpler question for our own time.</p>
 
-      <p class="question">What would a cathedral of thought look like in cyberspace?</p>
+        <p class="question">What would a cathedral of thought look like in cyberspace?</p>
 
-      <p class="closing">This is the beginning of that attempt.</p>
-    </section>
+        <p class="closing">This is the beginning of that attempt.</p>
+      </section>
+    </div>
   </main>
 </body>
 </html>
