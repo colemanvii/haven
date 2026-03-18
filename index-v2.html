@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HAVEN</title>
+  <style>
+    :root {
+      --bg: #ebe7df;
+      --text: #1e1d19;
+      --muted: #9a9188;
+      --faint: #b8b0a4;
+      --line: rgba(30, 29, 25, 0.08);
+      --accent: #8c6a3f;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Georgia", "Times New Roman", serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 96px 24px 120px;
+    }
+
+    .page {
+      width: min(440px, 100%);
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 64px;
+    }
+
+    .label, .status {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--faint);
+      font-weight: 400;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      margin-right: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      opacity: 0.5;
+      transform: translateY(-1px);
+    }
+
+    .title-block {
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      font-size: 10px;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: var(--muted);
+    }
+
+    .subhead {
+      margin: 0;
+      font-family: "Georgia", serif;
+      font-size: 13px;
+      font-style: italic;
+      color: var(--faint);
+      letter-spacing: 0.02em;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 15px;
+      line-height: 1.85;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    .question {
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 40px 0;
+    }
+
+    .laws {
+      margin: 32px 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .law-name {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      font-size: 9px;
+      font-weight: 400;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .law p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.85;
+      color: var(--text);
+    }
+
+    .closing {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--line);
+    }
+
+    .closing p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.85;
+    }
+
+    .colophon {
+      margin-top: 64px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--faint);
+    }
+
+    @media (max-width: 600px) {
+      body { padding: 56px 20px 72px; }
+      p { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="label">Haven</div>
+      <div class="status"><span class="status-dot"></span>Static</div>
+    </header>
+
+    <div class="title-block">
+      <h1>Founding Draft</h1>
+      <p class="subhead">In cyberspace as it is in heaven</p>
+    </div>
+
+    <p>Haven did not begin as a company or a platform. It began as a thought that would not leave.</p>
+
+    <p>For most of human history, the places where people sought truth were built of stone and timber. Cathedrals held light and silence for anyone who entered. But beneath the nave, deeper in, there was always something else—a vault. Smaller. Cooler. Unhurried. The place where what could not be lost was kept.</p>
+
+    <p>The cathedral was for the public. The vault was for what the cathedral was actually for.</p>
+
+    <p>The center of life has drifted elsewhere now. Much of it unfolds inside a territory with no soil and no sky. We call it cyberspace. It moves quickly, speaks loudly, and rewards whatever captures attention the fastest.</p>
+
+    <p>Meaning rarely survives long in such a place.</p>
+
+    <p>Haven is not a cathedral. It is not built to overwhelm or to gather crowds. It is an attempt to build a vault—a quiet, custodial structure in the digital world where signal remains intact, where thought is given room, and where presence is treated as something worth protecting.</p>
+
+    <p class="question">What would a monastery vault look like in cyberspace?</p>
+
+    <hr />
+
+    <p>The answer we have arrived at is not a place but a practice. Three commitments that feel less like principles we chose and more like ones we kept returning to until we admitted we believed them.</p>
+
+    <div class="laws">
+      <div class="law">
+        <div class="law-name">Coherence</div>
+        <p>What Haven is and how it presents itself are the same thing. No performance layered over reality. No surface that contradicts what lies beneath.</p>
+      </div>
+      <div class="law">
+        <div class="law-name">Continuity</div>
+        <p>What matters persists. Haven is built against the tendency of digital life to fragment and forget—to dissolve signal into noise. What you bring here, you keep.</p>
+      </div>
+      <div class="law">
+        <div class="law-name">Custody</div>
+        <p>Presence is not data. What is entrusted to Haven—your attention, your thought, your identity—is held with care and returned intact. Nothing here is extracted.</p>
+      </div>
+    </div>
+
+    <div class="closing">
+      <p>These are not differentiators. They are not a pitch. They are the ground the work stands on—recovered from older ways of thinking about what a structure is for, and applied, carefully, to this new and difficult territory.</p>
+
+      <p>Haven is early. It is unhurried. It is built for people who still believe that how something is made is inseparable from what it becomes.</p>
+    </div>
+
+    <div class="colophon">Est. 333 Westover</div>
+  </main>
+</body>
+</html>
