@@ -31,13 +31,52 @@ This is our working map (functional, not academic):
 
 ## Creative Physics Lexicon (starter)
 
-- **Wattage**: inner voltage when aligned
-- **Radiant heat**: steady signature warmth (not spectacle)
-- **Aligned fire**: focused intensity without chaos
-- **Ignition → Glide → Create**: the clean rhythm of making
-- **Solune**: the soft glow of rightness at the center
-- **Tending**: the practice of protecting the ember over time
+- **Wattage**: inner voltage when aligned  
+- **Radiant heat**: steady signature warmth (not spectacle)  
+- **Aligned fire**: focused intensity without chaos  
+- **Ignition → Glide → Create**: the clean rhythm of making  
+- **Solune**: the soft glow of rightness at the center  
+- **Tending**: the practice of protecting the ember over time  
+
+## What We’re Building
+
+- A simple curriculum anyone can use (artists, founders, humans)
+- Field notes, diagrams, and “chalkboard” maps
+- A clean repository of language, models, and practices
+- A bridge between neuroscience, contemplative science, and lived craft
+
+## How to Use This Repo
+
+Start here:
+- `docs/START-HERE.md` — orientation + the one-minute explanation
+- `docs/LEXICON.md` — living glossary
+- `docs/MODELS.md` — the core frameworks
+- `docs/PRACTICES.md` — daily/weekly protocols
+- `docs/READING.md` — sources + influences
+
+## Influences (living list)
+
+Socrates → wholeness  
+Plato → breadth  
+Aristotle → telos (purpose)  
+Wendell Berry → tending (endurance in place)
+
+Modern research we learn from (not endorsements):
+- Affective neuroscience / emotion construction
+- Contemplative neuroscience
+- Attention + interoception research
+- Habits, action selection, motivation
 
 ## Status
 
-Archived concept material from the former Haven Institute repository.
+This is an early public notebook.  
+**Signal over spectacle.**  
+We ship small, true pieces.
+
+---
+
+**Contact / Collaborate**
+Open an issue with:
+- who you are
+- what you’re working on
+- what you want to test together
